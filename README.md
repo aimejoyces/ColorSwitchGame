@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# (ITMSD 3) Laboratory 1: One Life + One Button
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# ColorSwitchGame
+A simple React Native + Expo mobile game created for the Mobile Application Development – Game Jam Lab.
 
-## Get started
+The game follows the One Button + One Life rule where the player must rely on quick reflexes and focus to survive.
 
-1. Install dependencies
+# Mobile App Game Jam – Laboratory 1
+Course: Mobile Application Development
+Framework: React Native + Expo
+Concept: One Button + One Life Game
 
-   ```bash
-   npm install
-   ```
+## Game Overview
+ColorSwitchGame is a fast reaction mobile game where players must tap the correct colored circles before time runs out.
 
-2. Start the app
+Each circle stays on the screen for only two seconds, so players must react quickly. If the player fails to tap the circle in time, the game ends immediately because the game only has one life.
 
-   ```bash
-   npx expo start
-   ```
+To make the game more challenging, other shapes appear as distractions. These shapes should not be tapped. If the player taps the wrong shape or misses the circle, the game ends.
 
-In the output, you'll find options to open the app in a
+The game tests the player’s: Reaction speed and Focus
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+while keeping the gameplay simple and easy to understand.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Technologies Used
+- React Native
+- Expo
 
-## Get a fresh project
 
-When you're ready, run:
+# Reflection
+### What was your game idea?
+My game idea was to create a simple a mobile game called ColorSwitchGame. The game is for the player to tap only the colored circles that appear on the screen and each circle stays on the screen for only two seconds, so the player needs to react quickly before the time runs out. If the player does not tap the circle in time, the game ends immediately because the game only has one life. I added other shapes and colors that appear on the screen as distractions. These shapes are not part of the goal to make the game more challenging, the player must focus and tap only the correct circles. The game is designed to test the player's reaction speed and attention. 
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### What was the most difficult part to implement?
+The most difficult part was the timing and touch detection. The circles only stay on the screen for a short time, so I needed to make sure the timer works properly and resets every time a new circle appears. I used React Hooks like useState and useEffect in React Native to control the timer and the game state. The difficult part was detecting the correct shape when the player taps the screen. Sometimes the circles and other shapes appear close to each other, so the game must detect the correct tap. I had to test and adjust the game several times to make sure the taps work correctly and the gameplay stays smooth.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### What would you improve with more time?
+If I had more time I would improve the design and add more features to make the game more fun. For example, I would addsound effects and vibration feedback when the player taps a circle or when the game ends and I would also improve the animations so the circles appear and disappear more smoothly. I would add saving the player's high score using AsyncStorage, so their score is still saved even after closing the app and I would improve the user interface to make the game look attractive.
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## GitHub Repository
+https://github.com/aimejoyces/ColorSwitchGame.git
+
+
+
+# Demo Video Link:
+https://drive.google.com/drive/folders/1Anbpe7jQX5nOZXcv-ZnGk27oIZ49q1VX?usp=sharing
